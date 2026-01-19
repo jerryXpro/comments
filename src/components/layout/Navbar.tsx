@@ -17,7 +17,7 @@ export function Navbar({ onHistoryClick }: NavbarProps) {
         <header className="h-16 border-b border-slate-200 dark:border-slate-700 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md flex items-center justify-between px-6 shrink-0 z-20 transition-colors">
             <div className="flex items-center gap-2">
                 <h1 className="text-xl font-bold bg-gradient-to-r from-primary-DEFAULT to-purple-600 bg-clip-text text-transparent">
-                    Comments
+                    期末評語小助手
                 </h1>
                 <span className="text-xs px-2 py-0.5 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400">
                     Beta
