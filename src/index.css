@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-DEFAULT: #4F46E5;
+  --color-primary-hover: #4338CA;
+  --color-primary-light: #818CF8;
+
+  --color-surface-light: #FFFFFF;
+  --color-surface-dark: #1E293B;
+
+  --color-background-light: #F1F5F9;
+  --color-background-dark: #0F172A;
+}
+
+@layer base {
+  body {
+    @apply bg-background-light text-slate-800 dark:bg-background-dark dark:text-slate-50 transition-colors duration-200;
+  }
+  
+  /* Make icons scale with UI settings */
+  svg.lucide {
+    width: calc(1em * var(--ui-icon-scale, 1));
+    height: calc(1em * var(--ui-icon-scale, 1));
+  }
+}
